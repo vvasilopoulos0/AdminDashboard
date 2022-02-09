@@ -190,6 +190,8 @@ li{
     box-shadow: black;
     font-size: calc(4px + 0.6vw);
     padding: 5% 10% 10% 10%;
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 /* styling the headers of the announcements and trending */
