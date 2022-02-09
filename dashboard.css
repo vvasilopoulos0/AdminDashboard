@@ -1,12 +1,19 @@
+
+
+@font-face {
+    font-family: myFont;
+    src: url("Assets/Font/ZenKaku/ZenKakuGothicAntique-Medium.ttf") format("truetype");
+}
+
 *{
     box-sizing: border-box;
 }
 
 html,body{
     width:100%;
-    height: 100%;
+    height: 130%;
     margin: 0;
-    background-color: rgb(212, 211, 211);
+    background-color: lightgray;
 }
 
 .container{
@@ -18,10 +25,12 @@ html,body{
 .midsection{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
+    height: 100%;
 }
 
 .navbar{
+    font-family: myFont;
     height: 100%;
     width: min(20%,150px);
     padding: 1% ;
@@ -50,8 +59,9 @@ li{
 }
 
 .header{
+    font-family: myFont;
     width: 100%;
-    height: 25%;
+    height: 20%;
     background-color: yellow;
     padding-bottom: 10px;
 }
@@ -98,6 +108,7 @@ li{
 .project-menu{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .project-menu > .project-options > li{
@@ -107,12 +118,15 @@ li{
 
 .main-site{
     display: flex;
-    height: 100%;
+    width: 100%;
+    height: 90%;
     padding: 5%;
+    text-align: center;
 }
 
 .project{
-    height: 100%;
+    height: 95%;
+    width: 80%;
     font-size: calc(4px + 0.6vw);
     display: grid;
     grid-template-rows: 0.5fr 4fr 4fr 4fr;
@@ -128,16 +142,22 @@ li{
     margin: 0;
     font-size: calc(9px + 0.5vw);
     font-weight: bolder;
+    font-family: myFont;
 }
 
 .main-site > .project > div {
     background-color: white;
-    border: 5px solid red;
+    border: 1px  grey;
+    border-radius: 20px;
     box-shadow: black;
     min-height: 0;
+    overflow: auto;
+    scrollbar-width: none;
+    padding: 5% 10% 10% 10%;
 }
 
 .extras{
+    height: 95%;
     display: grid;
     grid-template-rows: 0.5fr 5.75fr 0.5fr 5.75fr;
     gap: 3%;
@@ -146,9 +166,12 @@ li{
 }
 
 .extras > div{
-    background-color: white;
-    border: 5px solid red;
+    background-color: yellowgreen;
+    border: 2px solid grey;
+    border-radius: 20px;
     box-shadow: black;
+    font-size: calc(4px + 0.6vw);
+    padding: 5% 10% 10% 10%;
 }
 
 /* styling the headers of the announcements and trending */
@@ -156,6 +179,7 @@ li{
     margin: 0;
     font-size: calc(9px + 0.5vw);
     font-weight: bolder;
+    font-family: myFont;
 }
 
 /*  responsive */
