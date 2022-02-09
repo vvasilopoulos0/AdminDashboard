@@ -9,11 +9,20 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: lawngreen;
+}
+
+
 html,body{
     width:100%;
     height: 130%;
     margin: 0;
-    background-color: lightgray;
+    background-color: rgb(48, 46, 46);
 }
 
 .container{
@@ -34,7 +43,7 @@ html,body{
     height: 100%;
     width: min(20%,150px);
     padding: 1% ;
-    background-color: aqua;
+    background-color: rgb(79, 79, 245);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,8 +53,11 @@ html,body{
     
 }
 
-.navbar > ul > li{
-    
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: min(10px,1vw);
 }
 
 ul{
@@ -62,7 +74,7 @@ li{
     font-family: myFont;
     width: 100%;
     height: 20%;
-    background-color: yellow;
+    background-color: rgb(42, 175, 42);
     padding-bottom: 10px;
 }
 
@@ -81,7 +93,7 @@ li{
 }
 
 .search-bar > #search{
-    width: calc(60px + 3vw);
+    width: calc(100px + 3vw);
 }
 
 .profile-info{
@@ -98,11 +110,12 @@ li{
 .greeting{
     display: flex;
     align-items: center;
+    gap: max(20px,1vw);
 }
 
 .project-options{
     display: flex;
-    gap: 10px;
+    gap: max(20px,1vw)
 }
 
 .project-menu{
@@ -121,7 +134,6 @@ li{
     width: 100%;
     height: 90%;
     padding: 5%;
-    text-align: center;
 }
 
 .project{
@@ -131,9 +143,13 @@ li{
     display: grid;
     grid-template-rows: 0.5fr 4fr 4fr 4fr;
     grid-template-columns: 1fr 1fr ;
-    gap: 3%;
+    gap: max(5%,20px);
     
     
+}
+/* putting titles in the center */
+.project > div > h3{
+    text-align: center;
 }
 
 /* styling the headers of the projects */
@@ -143,10 +159,11 @@ li{
     font-size: calc(9px + 0.5vw);
     font-weight: bolder;
     font-family: myFont;
+    color: ivory;
 }
 
 .main-site > .project > div {
-    background-color: white;
+    background-color: ivory;
     border: 1px  grey;
     border-radius: 20px;
     box-shadow: black;
@@ -158,15 +175,16 @@ li{
 
 .extras{
     height: 95%;
+    width: 40%;
     display: grid;
     grid-template-rows: 0.5fr 5.75fr 0.5fr 5.75fr;
     gap: 3%;
-    padding-left: 5%;
+    padding-left: max(10%,20px);
     
 }
 
 .extras > div{
-    background-color: yellowgreen;
+    background-color: ivory;
     border: 2px solid grey;
     border-radius: 20px;
     box-shadow: black;
@@ -180,10 +198,16 @@ li{
     font-size: calc(9px + 0.5vw);
     font-weight: bolder;
     font-family: myFont;
+    color: ivory;
 }
 
 /*  responsive */
 @media screen and (max-width:600px){
+
+    .dashboard{
+        flex-direction: column;
+        gap: 10px;
+    }
     .project-menu{
         flex-direction: column;
         align-items: center;
@@ -197,8 +221,5 @@ li{
         justify-content: space-between;
     }
 
-    .project-options{
-        justify-content: flex-start;
-        gap: 0px;
-    }
+   
 }
