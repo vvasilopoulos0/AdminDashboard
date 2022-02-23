@@ -1,6 +1,6 @@
 <h1 align="center">AdminDashboard</h1>
 
-In this web page a basic layout is of a form is presented, where the user inputs some values, which get validated after. It does not involve any back-end work.
+A simple web page containing elements of an admin page.
 
 [AdminDashboard](https://vvasilopoulos0.github.io/AdminDashboard/)
 
