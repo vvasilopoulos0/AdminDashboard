@@ -1,6 +1,6 @@
 <h1 align="center">AdminDashboard</h1>
 
-A simple web page containing elements of an admin page.
+<p align="center">A simple web page containing elements of an admin page. </p>
 
 [AdminDashboard](https://vvasilopoulos0.github.io/AdminDashboard/)
 
