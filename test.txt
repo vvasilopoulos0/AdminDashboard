@@ -1,1 +1,2 @@
 Version control test
+I just added a new line
